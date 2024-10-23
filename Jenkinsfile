@@ -29,6 +29,9 @@ node ('Ubuntu-app-agent') {
             }
         }
     }
+    stage ('DAST') {
+        build 'SECURITY-DAST-OWASP_ZAP'
+    }
  
     // Stage to bring up the image using Docker Compose
     stage('Pull-image-server') {
