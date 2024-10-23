@@ -29,7 +29,7 @@ node ('Ubuntu-app-agent') {
             }
         }
     }
-    stage ('DAST'){
+    stage('DAST'){
         build 'SECURITY-DAST-OWASP_ZAP'
     }
  
